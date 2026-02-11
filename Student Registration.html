@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    <fieldset>
+        <legend>Student Information</legend>
+
+        <p>
+            <label>Full Name:
+                <input type="text" name="name" placeholder="Enter your name">
+            </label>
+        </p>
+
+        <p>
+            <label>Email:
+                <input type="email" name="email" placeholder="Enter your email">
+            </label>
+        </p>
+
+        <p>Gender:
+            <label>
+                <input type="radio" name="gender" value="Male"> Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female"> Female
+            </label>
+        </p>
+
+        <p>
+            <label>Department:
+                <select name="dept">
+                    <option>Computer Science</option>
+                    <option>Information System</option>
+                    <option>Information Technology</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>Comment:</label><br>
+            <textarea rows="4" cols="30"></textarea>
+        </p>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
