@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+p{
+    color: green;
+}
+body{
+    background-image: url(cr7.jpg);
+    background-repeat: no-repeat;
+}
+ul{
+    list-style: upper-roman;
+}
+ol{
+    list-style: circle;
+    list-style-position: inside;
+}
