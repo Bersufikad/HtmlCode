@@ -1,0 +1,115 @@
+:root {
+    --primary: #00d2ff;
+    --secondary: #3a7bd5;
+    --bg: #050a18;
+    --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* ስክሮል ሲያደርግ እንዲለሰልስ */
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(5, 10, 24, 0.95);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo { font-size: 1.8rem; font-weight: 800; }
+.logo span { color: var(--primary); }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a { color: #ccc; text-decoration: none; font-weight: 500; transition: 0.3s; }
+nav ul li a:hover { color: var(--primary); }
+
+section {
+    min-height: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; justify-content: center; }
+.profile-img {
+    width: 250px; height: 250px; border-radius: 50%;
+    border: 4px solid var(--primary); padding: 5px; object-fit: cover;
+}
+.highlight { color: var(--primary); }
+.social-icons {
+    font-size: 30px;
+    transition: 0.3s;
+}
+.social-icons:hover{
+    transform: scale(1.2);
+}
+.main-btn {
+    display: inline-block; margin-top: 20px; padding: 12px 35px;
+    background: var(--primary); color: #050a18; text-decoration: none;
+    border-radius: 50px; font-weight: bold; transition: 0.3s;
+}
+.main-btn:hover { transform: scale(1.05); background: white; }
+
+.about-content {
+    max-width: 800px; text-align: center; background: var(--card-bg);
+    padding: 40px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.skills-grid {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;
+}
+.bersu {
+    background: var(--card-bg); padding: 30px; border-radius: 15px;
+    text-align: center; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s;
+}
+.bersu:hover {transform: translateY(-10px); border-color: #00d2ff;}
+.skills-grid span { background: rgba(0, 210, 255, 0.1); padding: 8px 10px; border-radius: 20px; color: var(--primary); }
+.my{
+    margin-bottom: 20px;
+    color: #00d2ff ;
+}
+
+.section-title { margin-bottom: 40px; font-size: 2.5rem; color: var(--primary); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; width: 100%; }
+.card {
+    background: var(--card-bg); padding: 30px; border-radius: 15px;
+    text-align: center; border: 1px solid rgba(255, 255, 255, 0.1); transition: 0.3s;
+}
+.card:hover { transform: translateY(-10px); border-color: var(--primary); }
+.card-icon { font-size: 3rem; color: var(--primary); margin-bottom: 15px; }
+
+.glass-contact { width: 100%; max-width: 600px; text-align: center; }
+.contact-links p { font-size: 1.2rem; margin: 15px 0; }
+.contact-links i { color: var(--primary); margin-right: 10px; }
+.contact-links a {
+    color: var(--primary); 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    text-decoration: underline; 
+}
+
+footer { padding: 40px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); color: #777; }
